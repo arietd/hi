@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Ariet Dzhumashev</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  
+
+
+  <style>
+    html, body {
+            height: 100%;
+            margin: 0;
+        }
+    .parent {
+      
+      position: relative;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      
+    }
+    .fullPage {
+      display: block;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin:0;
+      float:left;
+      clear:none; 
+    }
+    .child {
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #firstPage{
+      background-color: #363636;
+      color: white;
+    }
+    #secondPage{
+      background-color: #A8A7A8;
+      color: white;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p> 
-</div>
+  
+
+  <div class="parent">
+    <div class ="fullPage" id="firstPage">
+      <div class="child">
+    <h1>
+      Ariet Dzhumashev
+    </h1>
+      <p>
+        I am an analyst who enjoys working with data to find meaningful insights.
+        That can help us make better decisions and improve processes.
+      </p> 
+    </div>
+    </div>
+  </div>
+
+      <div class="parent">
+        <div class ="fullPage" id="secondPage">
+          <h2>My works</h2>
+          <ul>
+              <li>R</li>
+              <li>Python</li>
+              <li>Tableau</li>
+
+          </ul>
+          
+        </div>
+      </div>
+  </div>
+
 
 </body>
 </html>
